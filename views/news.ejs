@@ -1,0 +1,37 @@
+<% include ./partials/head %>
+  <% include ./partials/navbar %>
+
+<div class="container">
+  <h1><%= title %></h1>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Source</th>
+            <th scope="col">Details</th>
+            <th scope="col">Content</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% News.map(a => {%>
+            <tr>
+              <th scope="row">
+                <a href="<%= a.url %>" target="_blank"><img width="180" height="135" src="<%= a.urlToImage %>" alt="<%=a.source.name%>"></a>
+              </th>
+              <td>
+                Source: <strong><%= a.source.name %></strong><br>
+                Title: <strong><%= a.title %></strong><br>
+                Author: <strong><%= a.author %></strong><br>
+                Published At: <strong><%= a.publishedAt %></strong><br>
+                Description: <%= a.description %><br>
+              </td>
+              <td>
+                <a id="content-color" href="<%=a.url%>" target="_blank"><strong>Content: </strong><%= a.content %></a>
+              </td>
+            </tr>
+          <%})%>         
+        </tbody>
+      </table>
+    </div>
+ 
+<% include ./partials/tail %>
