@@ -4,7 +4,7 @@ const axios = require('axios')
 
 //BUSINESS
 router.get('/business', async (req, res, next) => {
-  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=50&apiKey=d6fedeb52880423b9c1e66e0a7c55d3d')
+  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=50&apiKey=')
   .then(response => {
     //res.json(response.data.articles)
     
@@ -18,7 +18,7 @@ router.get('/business', async (req, res, next) => {
 
 //TECHNOLOGY
 router.get('/technology', async (req, res, next) => {
-  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=technology&pageSize=50&apiKey=d6fedeb52880423b9c1e66e0a7c55d3d')
+  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=technology&pageSize=50&apiKey=')
   .then(response => {
     //res.json(response.data.articles)
     
@@ -32,7 +32,7 @@ router.get('/technology', async (req, res, next) => {
 
 //HEALTH
 router.get('/health', async (req, res, next) => {
-  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=health&pageSize=50&apiKey=d6fedeb52880423b9c1e66e0a7c55d3d')
+  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=health&pageSize=50&apiKey=')
   .then(response => {
     //res.json(response.data.articles)
     
@@ -46,7 +46,7 @@ router.get('/health', async (req, res, next) => {
 
 //SCIENCE
 router.get('/science', async (req, res, next) => {
-  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=science&pageSize=50&apiKey=d6fedeb52880423b9c1e66e0a7c55d3d')
+  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=science&pageSize=50&apiKey=')
   .then(response => {
     //res.json(response.data.articles)
     
@@ -60,7 +60,7 @@ router.get('/science', async (req, res, next) => {
 
 //ENTERTAINMENT
 router.get('/entertainment', async (req, res, next) => {
-  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=entertainment&pageSize=50&apiKey=d6fedeb52880423b9c1e66e0a7c55d3d')
+  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=entertainment&pageSize=50&apiKey=')
   .then(response => {
     //res.json(response.data.articles)
     
@@ -74,7 +74,7 @@ router.get('/entertainment', async (req, res, next) => {
 
 //SPORTS
 router.get('/sports', async (req, res, next) => {
-  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=sports&pageSize=50&apiKey=d6fedeb52880423b9c1e66e0a7c55d3d')
+  await axios.get('http://newsapi.org/v2/top-headlines?country=us&category=sports&pageSize=50&apiKey=')
   .then(response => {
     //res.json(response.data.articles)
     
@@ -88,7 +88,7 @@ router.get('/sports', async (req, res, next) => {
 
 //GENERAL
 router.get('/', async (req, res, next) => {
-  await axios.get('http://newsapi.org/v2/top-headlines?country=us&pageSize=50&apiKey=d6fedeb52880423b9c1e66e0a7c55d3d')
+  await axios.get('http://newsapi.org/v2/top-headlines?country=us&pageSize=50&apiKey=')
   .then(response => {
     //res.json(response.data.articles)
     
